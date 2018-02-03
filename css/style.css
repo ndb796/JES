@@ -1,9 +1,8 @@
-/* Your custom styles */
-@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+/* Custom Styles */
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 header {
-  font-family: 'Jeju Gothic';
+  font-family: 'Nanum Gothic';
 }
 
 main {
@@ -11,5 +10,6 @@ main {
 }
 
 footer {
+  font-family: 'Nanum Gothic';
   font-size: 13px;
 }
