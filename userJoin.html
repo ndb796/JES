@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>JES</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+
+        main {
+            margin-top: 3rem;
+        }
+
+        main .card {
+            margin-bottom: 2rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .read-more {
+                text-align: center;
+            }
+        }
+
+        footer.page-footer {
+            background-color: #0f6256;
+            margin-top: 2rem;
+        }
+
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+
+        .primary-text {
+            color: #4285F4;
+        }
+    </style>
+
+</head>
+
+<body>
+
+  <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-inverse navbar-light">
+          <div class="container">
+              <a class="navbar-brand blue-text font-bold" href="#"><img class="img-fluid" src="./img/custom/logo_small.jpg"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link ml-4" href="#">메인
+                              <span class="sr-only">(current)</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link dark-grey-text ml-3" href="#">치료사</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link dark-grey-text ml-3" href="#">환자</a>
+                      </li>
+                      <li class="nav-item btn-group">
+                          <a class="nav-link dropdown-toggle dark-grey-text ml-3" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">스케줄
+                          </a>
+                          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">물리치료</a>
+                              <a class="dropdown-item" href="#">작업치료</a>
+                              <a class="dropdown-item" href="#">언어치료</a>
+                          </div>
+                      </li>
+                  </ul>
+                  <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="text" placeholder="검색" aria-label="Search">
+                  </form>
+              </div>
+          </div>
+      </nav>
+      <!--/.Navbar-->
+  </header>
+
+    <main>
+        <!--Main layout-->
+        <div class="container" style="max-width: 560px;">
+          <!-- Form login -->
+          <form>
+              <p class="h5 text-center mb-4">
+                <img src="./img/custom/logo_join.jpg">
+              </p>
+
+
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="md-form">
+                      <i class="fa fa-user prefix grey-text"></i>
+                      <input type="text" id="defaultForm-id" class="form-control">
+                      <label for="defaultForm-id">아이디</label>
+                  </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <button class="btn btn-default">CHECK</button>
+                </div>
+              </div>
+
+              <div class="md-form">
+                  <i class="fa fa-lock prefix grey-text"></i>
+                  <input type="password" id="defaultForm-pass" class="form-control">
+                  <label for="defaultForm-pass">비밀번호</label>
+              </div>
+
+              <div class="md-form">
+                  <i class="fa fa-lock prefix grey-text"></i>
+                  <input type="password" id="defaultForm-pass" class="form-control">
+                  <label for="defaultForm-pass">비밀번호 확인</label>
+              </div>
+
+              <hr>
+
+              <div class="md-form">
+                  <i class="fa fa-user prefix grey-text"></i>
+                  <input type="text" id="defaultForm-pass" class="form-control">
+                  <label for="defaultForm-pass">담당자</label>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="md-form">
+                    <i class="fa fa-mobile-phone prefix grey-text"></i>
+                    <input type="text" id="defaultForm-pass" class="form-control">
+                    <label for="defaultForm-pass">휴대전화</label>
+                  </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <button class="btn btn-default">CHECK</button>
+                </div>
+              </div>
+
+              <div class="md-form">
+                  <i class="fa fa-phone prefix grey-text"></i>
+                  <input type="text" id="defaultForm-pass" class="form-control">
+                  <label for="defaultForm-pass">전화번호</label>
+              </div>
+
+              <div class="md-form">
+                  <i class="fa fa-hospital-o prefix grey-text"></i>
+                  <input type="text" id="defaultForm-pass" class="form-control">
+                  <label for="defaultForm-pass">병원주소</label>
+              </div>
+
+              <div class="md-form">
+                  <i class="fa fa-send prefix grey-text"></i>
+                  <input type="email" id="defaultForm-pass" class="form-control">
+                  <label for="defaultForm-pass">이메일</label>
+              </div>
+
+              <div class="text-center">
+                  <button class="btn btn-default">JOIN</button>
+              </div>
+            </form>
+          <!-- Form login -->
+        </div>
+        <!--/.Main layout-->
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only mdb-color darken-2">
+        <!--Footer links-->
+        <div class="container">
+            <div class="row">
+                <!--First column-->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="title font-bold mt-3 mb-4">JES</h5>
+                    <p>Cloud Information System Only for Surgical and Nursing Hospitals.</p>
+                </div>
+                <!--/.First column-->
+                <hr class="w-100 clearfix d-sm-none">
+                <!--Second column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4">NAVIGATION</h5>
+                    <ul>
+                        <li>
+                            <a href="#!">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#!">개인정보 처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+                <hr class="w-100 clearfix d-sm-none">
+                <!--Third column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4">CONTACT</h5>
+                    <ul>
+                        <li>
+                            <a href="#!">(주) LSK</a>
+                        </li>
+                        <li>
+                            <a href="#!">대표: 이상화</a>
+                        </li>
+                        <li>
+                            <a href="#!">사업자등록번호<br>XXX-XX-XXXXX</a>
+                        </li>
+                        <li>
+                            <a href="#!">경상북도 포항시</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+                <hr class="w-100 clearfix d-sm-none">
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4">CENTER</h5>
+                    <ul>
+                        <li>
+                            <a href="#!">054)XXX-XXXX</a>
+                        </li>
+                        <li>
+                            <a href="#!">xxxxxx@naver.com</a>
+                        </li>
+                        <li>
+                            <a href="#!">운영시간<br>09:00 ~ 18:00</a>
+                        </li>
+                        <li>
+                            <a href="#!">주말 및 공휴일 휴무</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+            </div>
+        </div>
+        <!--/.Footer links-->
+        <hr>
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="containter-fluid">
+                2018 Copyright © LSK Corp. All Rights Reserved.
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
