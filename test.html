@@ -198,6 +198,8 @@
 
     <script>
       $(document).ready(function(){
+          // 처음 시작할 때 숨겨줘야함
+          $("#idFormType").hide();
           $("#idFinder1").hide();
           $("#idFinder2").hide();
           $("#idfinder").click(function(){
@@ -215,11 +217,13 @@
 
           $("#userFormTel").click(function(){
             // $("#idFinder1").toggle();
+            $("#idFormType").hide();
             $("#idFinder2").hide();
             $("#idFinder1").toggle();
           });
           $("#userFormEmail").click(function(){
             // $("#idFinder1").toggle();
+            $("#idFormType").hide();
             $("#idFinder1").hide();
             $("#idFinder2").toggle();
           });
