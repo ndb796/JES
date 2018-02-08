@@ -1,0 +1,51 @@
+CREATE DATABASE JES;
+USE JES;
+
+CREATE TABLE JES_Hospital (
+  hospitalID VARCHAR(30) NOT NULL,
+  hospitalPassword VARCHAR(64),
+  hospitalChargedName VARCHAR(20),
+  hospitalChargedMobilePhone VARCHAR(20),
+  hospitalWiredPhone VARCHAR(20),
+  hospitalAddress VARCHAR(100),
+  hospitalEmail VARCHAR(64),
+  hospitalCode VARCHAR(6),
+  hospitalAuthenticationLevel INT,
+  hospitalAuthenticationNumber VARCHAR(20),
+  PRIMARY KEY (hospitalID)
+) ENGINE = InnoDB;
+
+CREATE TABLE JES_Hospital_Schedule_Set (
+  hospitalID VARCHAR(30) NOT NULL,
+  hospitalWorkStartHour INT,
+  hospitalWorkStartMinute INT,
+  hospitalTreatmentTime INT,
+  hospitalBreakTime INT,
+  hospitalLunchStartHour INT,
+  hospitalLunchStartMinute INT,
+  hospitalLunchEndHour INT,
+  hospitalLunchEndMinute INT,
+  hospitalAMTreatmentCount INT,
+  hospitalPMTreatmentCount INT,
+  PRIMARY KEY (hospitalID)
+) ENGINE = InnoDB;
+
+CREATE TABLE JES_Hospital_Treatment_Type (
+  treatmentTypeID INT NOT NULL AUTO_INCREMENT,
+  hospitalID VARCHAR(30) NOT NULL,
+  treatmentTypeName VARCHAR(45),
+  PRIMARY KEY (`treatmentTypeID`, `hospitalID`)
+) ENGINE = InnoDB;
+
+CREATE TABLE JES_Therapist (
+  hospitalID VARCHAR(30) NOT NULL,
+  therapistID VARCHAR(30) NOT NULL,
+  treatmentTypeID INT NOT NULL,
+  therapistPassword VARCHAR(64),
+  therapistName VARCHAR(20),
+  therapistBirthDate DATETIME,
+  therapistEnterDate DATETIME,
+  therapistLeaveDate DATETIME,
+  therapistWeekendWorked TINYINT,
+  PRIMARY KEY (hospitalID, therapistID, treatmentTypeID)
+) ENGINE = InnoDB;
